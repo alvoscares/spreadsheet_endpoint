@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "quantum-episode-350720",
+    "private_key_id": "f997de8bfc3ee4359c9c4a1bc9674737e4bed74d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD1jmMn/Mk4UTdI\nKjSREkgMiyETBioGEcDiuk+VM0O3LJQNbl5YdbXyZruQ8JktHnY2p/tiNtw3z+Hs\nJnDEVqu604JLxZ1LQsV3bvBATxn8eGXlHPRgkQGvKSxq0C6p5OCAfMSXtzU5JkaS\n+cD2fNmy3tFlTrmZnLYWAk5RJCOLWu6vwlC/wYvF07Q9IOb5hkm0q51MfR4YOJFF\npl1loTmH79HAuEVNORk7Zm67+G0PQcgG/3PKcS6kdcBq9RF6BNMsEDCLafnDDjGv\n5acfuZE1hB50NoK/i6NEn67x6yXHJLWp0fcWaC95Lz8y4ykBq+XoHjsRy3GSmunz\nVDiqPqZBAgMBAAECggEAD4yirseNHmnWLFWv2nfj5BdzUrcTNistoa3WmEYUxaan\nAWq5wrRBf0YOHpF9waOqLK/adU+wBkC9t6x/e49ZdI0sNQwgd8GUq4l04T2hEaG2\nIhoBR5QnHSZoT6M7MTrzFG/SKyFI14Oa+HekRneFeZQuglHH4vhPd3lR6EV3kr1h\nmmp/HgC5xNRRv0lFZMoqQ0D+i6s6v4OnUIYYAa2T+WtCVOkcHi7f6IpBour0zvx9\nMCugEeuWVVs34ajQlja6r+YuDt7WTJ2KwP1Elsn1c0xT6jYWe0m05ywsMlzJE3mm\n64IqaaLl0rWwR4zWm5OPaJOpeEE+VbQ9pMW03iMpIQKBgQD9y19ksWy9BPd/04Yp\neo5wn/eAdVrBeVVkETMEhBEbQyyRynJr8crcj8PcBnfG9uHt4MwVbHEQKUQDPJCy\nWDzoRJAJmegDhfyQ5abLj7V+6iQc9rt7TUSpe87B3SegPf1MBBInSwhu7y18ap7B\nJFyWd0gnc4pzRcGGMQBaFekaXQKBgQD3sK/QBPbvOmCsG/CQ9FLVKzQQNyH3SP6j\nQyskF2EiZtxu9PM/rWmqoeDdpcwrlsCQ8rQn3Tg9BQe3NISOkTq5BcwHiq6snkwF\nzNXE+1EqRlSUpDg9xO0GUHXqVXlopnjQl724HnJqM6zxN7pXTo5qsqbSW9W+0+hb\nrWTqzZPlNQKBgHhT1AaJmGSF1lJkl1dTI/WB4nalLUJNpI6tGOMrOnESiC8XLOjA\n2s133ASVjHRo2PVPf3Mo1vIynmxqarAj5by5xRDIR5hkDjskptAccpCZskWJNZpg\nKA2zBXQkxoTS3yULSRAYIwd1nrs+UcaA1uT/6NXLkfjVOcvFr8UGXl6BAoGAOVCE\nTlFnxpGunwTUFObEaBlYMcxgKrWUXrkDOZXDX0+IAJDj3L9G7ToKK5/a79cxdhkD\nQRo6kjwgve8EIW1PtlK2FKStqLn0g38TlEJHVM3zcnXRodF4u3ZQ4smmj2W+HR6P\nwxQgi5yrjyHDF8LQx7XRTmn7uu2UHeqwqHirmWUCgYEA7IBtfoXbZNxK6cxmEfbu\nEZUg40kibYEBWsSbL8CflGE8t3+yaWwdibgZ4Y1CksEzaIf7/USa+v8r2wXVEjLu\n2/cyMGNQmWrUhICMNLvH5LcgdqdmvGOaUt5E+p0mpMd2JqosvHXqb27afM70IHBc\nT8HM5N72j7nY40cExpavGaI=\n-----END PRIVATE KEY-----\n",
+    "client_email": "api-idesa-135@quantum-episode-350720.iam.gserviceaccount.com",
+    "client_id": "104891768750528824408",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/api-idesa-135%40quantum-episode-350720.iam.gserviceaccount.com"
+  }

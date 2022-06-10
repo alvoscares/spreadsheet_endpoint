@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/cimeco/spreadsheet_endpoint/issues"
   },
-  "homepage": "https://github.com/cimeco/spreadsheet_endpoint#readme"
+  "homepage": "https://github.com/cimeco/spreadsheet_endpoint#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "google-spreadsheet": "^3.3.0",
+    "i": "^0.3.7",
+    "nodejs": "0.0.0",
+    "nodemon": "^2.0.16",
+    "npm": "^8.12.1"
+  },
+  "devDependencies": {
+    "@types/google-spreadsheet": "^3.2.2"
+  }
 }
