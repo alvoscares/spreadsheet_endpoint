@@ -1,10 +1,13 @@
 let googleSheet = require('../utils/spreeadSheet');
+const { idGenerator } = require('../utils/idGenerator'); 
+
+
 
 const obtenerDatos = async (req, res) => {        
-    const registros = await googleSheet.accederGoogleSheet("1_1CgtlIOa1cFK-GcLT2DpMNkOxZ5-ckiZXpF_aj2lNA");     
+    const id =  idGenerator(req.requestInfo)    
+    const registros = await googleSheet.accederGoogleSheet(id);    
     let data = [];
-    let dataChild = []
-    console.log(req.requestInfo)
+    let dataChild = []    
     registros.filter(row => {
         return row.Indicador == req.requestInfo
     }).map(row => {        

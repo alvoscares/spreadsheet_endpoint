@@ -1,0 +1,16 @@
+{
+    "blocks": {
+        "actividad": {
+            "id": "1mq6vA7H2lKRVfskzoylW_vZCr4j2tfz8gl8Gq7yMegQ"
+        },
+        "dolar": {
+            "id": "1_1CgtlIOa1cFK-GcLT2DpMNkOxZ5-ckiZXpF_aj2lNA"
+        },
+        "previsional": {
+            "id": "16nChLLCo8HtMLzSOqsP8jbUCSgKSOQx7qpR2SU_MQdY"
+        },
+        "salarios": {
+            "id": "1CRC55USFZBWpd9HhbofpKTVssJ_fyYpWF-0VAYPfeD0"
+        }
+    }
+}
