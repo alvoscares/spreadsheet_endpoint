@@ -1,6 +1,7 @@
-const setRequestInfo = (text) => {
+const setRequestInfo = (indicador, region) => {
     return (req, res, next) => {
-      req.requestInfo = text;
+      req.requestInd = indicador;      
+      req.requestReg = region;      
       next();
     };
   };

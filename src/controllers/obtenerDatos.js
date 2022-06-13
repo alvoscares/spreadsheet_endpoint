@@ -4,12 +4,15 @@ const { idGenerator } = require('../utils/idGenerator');
 
 
 const obtenerDatos = async (req, res) => {        
-    const id =  idGenerator(req.requestInfo)    
+    const id =  idGenerator(req.requestInd)    
     const registros = await googleSheet.accederGoogleSheet(id);    
     let data = [];
     let dataChild = []    
     registros.filter(row => {
-        return row.Indicador == req.requestInfo
+        if(req.requestReg) {            
+            return row.Indicador == req.requestInd && row.Región == req.requestReg
+        }
+        return row.Indicador == req.requestInd 
     }).map(row => {        
         dataChild.push([row.Etiqueta, row.Valor]);                                            
         return dataChild
