@@ -9,6 +9,10 @@ const obtenerDatos = async (req, res) => {
     let data = [];
     let dataChild = []    
     registros.filter(row => {
+        console.log(row.Fecha)
+        if(req.requestDate) {
+            return row.Indicador == req.requestInd && row.Fecha >= req.requestDate
+        }
         if(req.requestReg) {            
             return row.Indicador == req.requestInd && row.Región == req.requestReg
         }
