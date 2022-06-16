@@ -1,8 +1,9 @@
-const setRequestInfo = (indicador, region, fecha) => {
+const setRequestInfo = (indicador, region, fecha, etiqueta) => {
     return (req, res, next) => {
       req.requestInd = indicador;      
       req.requestReg = region;      
-      req.requestDate = fecha;      
+      req.requestDate = fecha;
+      req.requestTag = etiqueta;      
       next();
     };
   };
