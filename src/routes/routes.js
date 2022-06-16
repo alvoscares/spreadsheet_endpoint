@@ -7,7 +7,7 @@ const { setRequestInfo } = require('../utils/requestInfo');
 
 router.get('/actividad-economica-emae.json', setRequestInfo('EMAE desestacionalizado (variación mensual)', 'Nación', undefined, "EMAE desestacionalizado"), obtenerDatos);
 router.get('/actividad-economica-pbi.json', setRequestInfo('PBI a precios constantes (variación interanual)', 'Nación', undefined, "PBI a precios constantes"), obtenerDatos);
-router.get('/cuentas-publicas-gasto-nacion.json', setRequestInfo('Gasto (variación interanual)', 'Nación'), obtenerDatos);
+router.get('/cuentas-publicas-gasto-nacion.json', setRequestInfo('Gasto (variación interanual)', 'Nación', 'Gasto'), obtenerDatos);
 router.get('/dolar-blue.json', setRequestInfo('Blue', 'Nación', 20200101, 'USD en pesos'), obtenerDatos);
 router.get('/dolar-CCL.json', setRequestInfo('CCL', 'Nación', 20200101, 'USD en pesos'), obtenerDatos);
 router.get('/dolar-oficial.json', setRequestInfo('Minorista', 'Nación', 20200101, 'USD en pesos'), obtenerDatos);
