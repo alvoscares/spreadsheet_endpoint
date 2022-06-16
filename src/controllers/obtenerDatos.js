@@ -8,8 +8,7 @@ const obtenerDatos = async (req, res) => {
     const registros = await googleSheet.accederGoogleSheet(id);    
     let data = [];
     let dataChild = []    
-    registros.filter(row => {
-        console.log(row.Fecha)
+    registros.filter(row => {        
         if(req.requestDate) {
             return row.Indicador == req.requestInd && row.Fecha >= req.requestDate
         }
