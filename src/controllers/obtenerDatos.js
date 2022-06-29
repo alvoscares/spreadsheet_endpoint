@@ -9,7 +9,7 @@ const obtenerDatos = async (req, res) => {
     let data = [];
     let dataChild = [] 
     if(req.requestMultiInd && req.requestInd == "Dólar") {
-        dataChild.push(["Dólar","Blue", "CCL", "Solidario", "Oficial"])
+        dataChild.push(["Dólar", "Solidario", "Blue", "CCL", "Oficial"])
         let datos = registros.filter(row => {                    
         return row.Indicador == 'Dólar blue'|| row.Indicador == 'Dólar CCL' || row.Indicador == 'Dólar solidario'|| row.Indicador == 'Dólar minorista'
         }).reduce((collector, item) => {
