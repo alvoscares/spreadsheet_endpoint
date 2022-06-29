@@ -10,10 +10,11 @@ const idGenerator =  (name) => {
         case 'Gasto (variación interanual)':
           id = apiConfig.blocks.cuentas.id
           break; 
-        case 'Blue':
-        case 'CCL':
-        case 'Solidario':
-        case 'Minorista':
+        case 'Dólar blue':
+        case 'Dólar CCL':
+        case 'Dólar solidario':
+        case 'Dólar minorista':
+        case 'Dólar':
           id = apiConfig.blocks.dolar.id
           break;                          
         case 'Presión sobre el mercado laboral':
