@@ -10,9 +10,8 @@ const obtenerDatos = async (req, res) => {
     let dataChild = [] 
     if(req.requestMultiInd && req.requestInd == "Dólar") {
         dataChild.push(["Dólar","Blue", "CCL", "Solidario", "Oficial"])
-        let datos = registros.filter(row => {     
-        if (!row.Fecha >= req.requestDate) return null;           
-        return row.Fecha >= req.requestDate && (row.Indicador == 'Blue'|| row.Indicador == 'CCL' || row.Indicador == 'Solidario'|| row.Indicador == 'Minorista')
+        let datos = registros.filter(row => {                    
+        return row.Indicador == 'Dólar blue'|| row.Indicador == 'Dólar CCL' || row.Indicador == 'Dólar solidario'|| row.Indicador == 'Dólar minorista'
         }).reduce((collector, item) => {
             const { index, result } = collector;
           
