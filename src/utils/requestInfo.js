@@ -1,7 +1,6 @@
-const setRequestInfo = (indicador, region, etiqueta, indicadorMultiple) => {
+const setRequestInfo = (indicador, etiqueta, indicadorMultiple) => {
     return (req, res, next) => {
-      req.requestInd = indicador;      
-      req.requestReg = region;            
+      req.requestInd = indicador;                      
       req.requestTag = etiqueta;
       req.requestMultiInd = indicadorMultiple;     
       next();

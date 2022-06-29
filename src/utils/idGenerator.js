@@ -3,11 +3,11 @@ const  apiConfig  = require('../json/apiConfig.json');
 const idGenerator =  (name) => {
     let id;       
     switch (name) {
-        case 'EMAE desestacionalizado (variación mensual)':
-        case 'PBI a precios constantes (variación interanual)':
+        case 'Estimador Mensual de Actividad Económica (EMAE)':
+        case 'Producto Bruto Interno (PBI)':
           id = apiConfig.blocks.actividad.id
           break; 
-        case 'Gasto (variación interanual)':
+        case 'Gasto primario (Nación)':
           id = apiConfig.blocks.cuentas.id
           break; 
         case 'Dólar blue':
@@ -17,22 +17,25 @@ const idGenerator =  (name) => {
         case 'Dólar':
           id = apiConfig.blocks.dolar.id
           break;                          
-        case 'Presión sobre el mercado laboral':
-        case 'Tasa de ocupados demandantes':
-        case 'Tasa de desocupación':
-        case 'Empleo Registrado (SIPA)':
+        case 'Presión sobre el mercado laboral (Córdoba)':
+        case 'Tasa de ocupados demandantes (Córdoba)':
+        case 'Tasa de desocupación (Nación)':
+        case 'Tasa de desocupación (Córdoba)':
+        case 'Empleo registrado (Nación)':
           id = apiConfig.blocks.mercado.id
           break;        
-        case 'Tasa de pobreza (personas)':                        
+        case 'Tasa de pobreza (Córdoba)':                        
+        case 'Tasa de pobreza (Nación)': 
           id = apiConfig.blocks.pobreza.id
           break;
-        case 'Haber medio':        
+        case 'Haber medio (Córdoba)':        
           id = apiConfig.blocks.previsional.id
           break;  
-        case 'IPC (variación mensual)':        
+        case 'Inflación Córdoba (IPC)':        
+        case 'Inflación Nación (IPC)':        
           id = apiConfig.blocks.precios.id
           break;
-        case 'Índice Total de Salarios (variación interanual)':
+        case 'Salarios (Índice de Salarios)':
           id = apiConfig.blocks.salarios.id
           break;
         default:
