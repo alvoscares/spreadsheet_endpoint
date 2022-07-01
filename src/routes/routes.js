@@ -10,9 +10,10 @@ router.get('/actividad-economica-pbi.json', setRequestInfo('Producto Bruto Inter
 router.get('/cuentas-publicas-gasto-nacion.json', setRequestInfo('Gasto primario (Nación)', 'Gasto primario (Nación)'), obtenerDatos);
 router.get('/dolar-blue.json', setRequestInfo('Dólar blue', 'USD en pesos'), obtenerDatos);
 router.get('/dolar-CCL.json', setRequestInfo('Dólar CCL', 'USD en pesos'), obtenerDatos);
-router.get('/dolar-oficial.json', setRequestInfo('Dólar minorista', 'USD en pesos'), obtenerDatos);
+router.get('/dolar-oficial.json', setRequestInfo('Dólar oficial', 'USD en pesos'), obtenerDatos);
+router.get('/dolar-MEP.json', setRequestInfo('Dólar MEP', 'USD en pesos'), obtenerDatos);
 router.get('/dolar-solidario.json', setRequestInfo('Dólar solidario', 'USD en pesos'), obtenerDatos);
-router.get('/dolar-unificados.json', setRequestInfo("Dólar",  'USD en pesos', ["Solidario","Blue","CCL","Minorista"]), obtenerDatos);
+router.get('/dolar-unificados.json', setRequestInfo("Dólar",  'USD en pesos', ['Dólar blue', 'Dólar solidario', 'Dólar MEP', 'Dólar CCL', 'Dólar oficial']), obtenerDatos);
 router.get('/mercado-laboral-desocupacion-cordoba.json', setRequestInfo('Tasa de desocupación (Córdoba)',  'Tasa de desocupación (Córdoba)'), obtenerDatos);
 router.get('/mercado-laboral-desocupacion-nacion.json', setRequestInfo('Tasa de desocupación (Nación)',  'Tasa de desocupación (Nación)'), obtenerDatos);
 router.get('/mercado-laboral-empleo-registrado-nacion.json', setRequestInfo('Empleo registrado (Nación)',   'Empleo Registrado (SIPA)'), obtenerDatos);

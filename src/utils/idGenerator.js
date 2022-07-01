@@ -13,7 +13,8 @@ const idGenerator =  (name) => {
         case 'Dólar blue':
         case 'Dólar CCL':
         case 'Dólar solidario':
-        case 'Dólar minorista':
+        case 'Dólar oficial':
+        case 'Dólar MEP':
         case 'Dólar':
           id = apiConfig.blocks.dolar.id
           break;                          

@@ -8,10 +8,10 @@ const obtenerDatos = async (req, res) => {
     const registros = await googleSheet.accederGoogleSheet(id);    
     let data = [];
     let dataChild = [] 
-    if(req.requestMultiInd && req.requestInd == "Dólar") {
-        dataChild.push(["Dólar", "Solidario", "Blue", "CCL", "Oficial"])
-        let datos = registros.filter(row => {                    
-        return row.Indicador == 'Dólar blue'|| row.Indicador == 'Dólar CCL' || row.Indicador == 'Dólar solidario'|| row.Indicador == 'Dólar minorista'
+    if(req.requestMultiInd && req.requestInd == "Dólar") {        
+        dataChild.push(["Dólar", "Solidario", "Blue", "MEP", "CCL", "Oficial"])
+        let datos = registros.filter(row => {                                
+        return row.Indicador == 'Dólar blue'|| row.Indicador == 'Dólar CCL' || row.Indicador == 'Dólar solidario'|| row.Indicador == 'Dólar oficial' || row.Indicador == 'Dólar MEP'
         }).reduce((collector, item) => {
             const { index, result } = collector;
           
