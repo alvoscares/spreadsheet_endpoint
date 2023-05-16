@@ -1,36 +1,18 @@
 [
-	[
-		{
-			"alvo": [
-				[
-					"",
-					"Prueba Graficos Alvo"
-				],
-				[
-					"enero 2018",
-					"-0,43"
-				],
-				[
-					"febrero 2018",
-					"0,04"
-				]
+	{
+		"alvo": [
+			[
+				"",
+				"Prueba Graficos Alvo"
+			],
+			[
+				"enero 2018",
+				"-0,43"
+			],
+			[
+				"febrero 2018",
+				"0,04"
 			]
-		},
-		{
-			"facu": [
-				[
-					"",
-					"Prueba Graficos Alvo"
-				],
-				[
-					"enero 2018",
-					"-0,43"
-				],
-				[
-					"febrero 2018",
-					"0,04"
-				]
-			]
-		}
-	]
+		]
+	}
 ]
