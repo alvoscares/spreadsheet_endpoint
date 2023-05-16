@@ -1,0 +1,17 @@
+{
+    "precios":{
+        "idSheet": "1H_yM22JC1_IJzjHGVW4kLiDACepszZqfaOrVl1dptF8",
+        "indicadores": [
+            {
+                "titulo": "Inflación Nación (IPC)",
+                "tag": "IPC - Nación",
+                "path": "ipc-nacion"
+            },
+            {
+                "titulo": "Inflación Córdoba (IPC)",
+                "tag": "IPC - Córdoba",
+                "path": "ipc-cordoba"
+            }
+        ]
+    }
+}

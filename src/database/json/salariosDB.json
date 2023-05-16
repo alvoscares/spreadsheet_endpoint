@@ -1,0 +1,25 @@
+{
+    "salarios":{
+        "idSheet": "1pinlBSGzouGHBlKb9b7Y9S8vATwcL-zliZV5q1yvDTM",
+        "indicadores": [
+            {
+                "titulo": "Salarios (Índice de Salarios)",
+                "tag": "",
+                "path": "",
+                "sheetIndex": 0
+            },
+            {
+                "titulo": "Salarios por categorías (Índice de Salarios)",
+                "tag": "",
+                "path": "",
+                "sheetIndex": 1
+            },
+            {
+                "titulo": "Salarios (RIPTE)",
+                "tag": "",
+                "path": "",
+                "sheetIndex": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "actividad":{
+        "idSheet": "1DXfKnd1ajyp6GIYDWH3xIYdIZpK2U81zhWP0yOSXO1w",
+        "indicadores": [
+            {
+                "titulo": "Producto Bruto Interno (PBI)",
+                "subTitulo": "Variación interanual en porcentaje (%)",
+                "tag": "PBI a precios constantes",
+                "path": "pbi-porcentaje"
+            },
+            {
+                "titulo": "Producto Bruto Interno (PBI)",
+                "subTitulo": "En millones de pesos",
+                "tag": "PBI a precios constantes",
+                "path": "pbi-niveles"
+            },
+            {
+                "titulo": "Estimador Mensual de Actividad Económica (EMAE)",
+                "tag": "EMAE desestacionalizado",
+                "path": "emae"
+            }
+        ]
+    }
+}

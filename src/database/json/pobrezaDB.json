@@ -1,0 +1,19 @@
+{
+    "pobreza":{
+        "idSheet": "1Gr5gQj67L-51LUVNWQmJnRMLE_zUU_tTKQQD9Ets1h8",
+        "indicadores": [
+            {
+                "titulo": "Tasa de pobreza",
+                "tag": "",
+                "path": "",
+                "sheetIndex": 0
+            },
+            {
+                "titulo": "Canasta Básica Total",
+                "tag": "",
+                "path": "",
+                "sheetIndex": 1
+            }
+        ]
+    }
+}

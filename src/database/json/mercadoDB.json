@@ -1,0 +1,43 @@
+{
+    "mercado":{
+        "idSheet": "1BDAGFhNzTSkNxuV73aokvN2rN_fD9pjj1fpw1wbjJ7o",
+        "indicadores": [
+            {
+                "titulo": "Tasa de desocupación",
+                "tag": "IPC - Nación",
+                "path": "ipc-nacion",
+                "sheetIndex": 0
+            },
+            {
+                "titulo": "Tasa de inactividad",
+                "tag": "IPC - Nación",
+                "path": "ipc-nacion",
+                "sheetIndex": 0
+            },
+            {
+                "titulo": "Presión sobre el mercado laboral",
+                "tag": "IPC - Nación",
+                "path": "ipc-nacion",
+                "sheetIndex": 0
+            },
+            {
+                "titulo": "Empleo por categorías - EPH (Nación)",
+                "tag": "IPC - Nación",
+                "path": "ipc-nacion",
+                "sheetIndex": 1
+            },
+            {
+                "titulo": "Empleo por categorías - EPH (Córdoba)",
+                "tag": "IPC - Nación",
+                "path": "ipc-nacion",
+                "sheetIndex": 1
+            },
+            {
+                "titulo": "Empleo registrado por categorías - Min. Trabajo (Nación)",
+                "tag": "IPC - Córdoba",
+                "path": "ipc-cordoba",
+                "sheetIndex": 2
+            }
+        ]
+    }
+}

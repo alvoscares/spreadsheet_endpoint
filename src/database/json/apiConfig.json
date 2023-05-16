@@ -1,28 +1,28 @@
 {
     "blocks": {
+        "dolar": {
+            "id": "1Q9BeRuYYiezVSuOvn0gT1RQyHj762jEIXxZe2QmwGEw"
+        },
+        "precios": {
+            "id": "13QivlUCKCXlj5dnwSHaGOnAq79ShZBPsfYl9pEva0bU"
+        },
         "actividad": {
             "id": "1_2JOjqEJcyR0MZaElh5Xv310dbT7va77hR8YQqdLrd0"
         },
         "cuentas": {
             "id": "1fP08vUwvIKsqni04A8nCn9rn07P-NnuqOSUAxVIlAjQ"
         },
-        "dolar": {
-            "id": "1Q9BeRuYYiezVSuOvn0gT1RQyHj762jEIXxZe2QmwGEw"
-        },
         "mercado": {
             "id": "1b--IreJ6S50dCXUn39HLbdEHEZc_I-VBvykCg2Hv7R4"
+        },
+        "salarios": {
+            "id": "1ySVE6EMvXeLN4-bd27YqbcTo1mxCOrQ-ltCDT8c0bRY"
         },
         "previsional": {
             "id": "16nChLLCo8HtMLzSOqsP8jbUCSgKSOQx7qpR2SU_MQdY"
         },
-        "precios": {
-            "id": "13QivlUCKCXlj5dnwSHaGOnAq79ShZBPsfYl9pEva0bU"
-        },
         "pobreza":{
             "id": "1H1T6wLh8zRDNYxuHepPp_QLjvpRaF3nBcR9H3gNPOu8"
-        },
-        "salarios": {
-            "id": "1ySVE6EMvXeLN4-bd27YqbcTo1mxCOrQ-ltCDT8c0bRY"
         }
-    }
+    }    
 }

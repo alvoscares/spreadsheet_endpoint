@@ -1,0 +1,25 @@
+{
+    "cuentas":{
+        "idSheet": "1mPfPQqz9NZWcXqfZm8GKojywEcdZxEHchUwmiPcbdA0",
+        "indicadores": [
+            {
+                "titulo": "Ingresos y gastos primarios (Nación)",
+                "tag": "Ingresos y gastos primarios (Nación)",
+                "path": "ingresos-gastos",
+                "sheetIndex": 0
+            },
+            {
+                "titulo": "Déficit fiscal y cuasifiscal (Nación)",
+                "tag": "Déficit fiscal y cuasifiscal (Nación)",
+                "path": "deficit",
+                "sheetIndex": 1
+            },
+            {
+                "titulo": "Tasas de interés (Nación)",
+                "tag": "Tasa de interés",
+                "path": "tasas",
+                "sheetIndex": 2
+            }
+        ]
+    }
+}

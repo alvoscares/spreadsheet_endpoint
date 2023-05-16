@@ -1,0 +1,38 @@
+{
+    "dolar":{
+        "idSheet": "1emWCo1El5wn3-PGB-nqjZl_HpgMMeWN8AUeu_LxeyQo",
+        "indicadores": [
+            {
+                "titulo": "Dólar ahorro",
+                "tag": "USD en pesos",
+                "path": "ahorro.josn"
+            },
+            {
+                "titulo": "Dólar blue",
+                "tag": "USD en pesos",
+                "path": "blue.json"
+            },
+            {
+                "titulo": "Dólar MEP",
+                "tag": "USD en pesos",
+                "path": "mep.json"
+            },
+            {
+                "titulo": "Dólar CCL",
+                "tag": "USD en pesos",
+                "path": "cll.json"
+            },
+            {
+                "titulo": "Dólar oficial",
+                "tag": "USD en pesos",
+                "path": "oficial.json"
+            },
+            {
+                "titulo": "Comparación dólares",
+                "tag": "USD en pesos",
+                "path": "comparacion.json",
+                "multiIndicadores": ["Dólar ahorro", "Dólar blue", "Dólar MEP", "Dólar CCL", "Dólar oficial"]
+            }
+        ]
+    }
+}
