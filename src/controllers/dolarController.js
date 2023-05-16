@@ -58,7 +58,7 @@ const getDolar = async (req, res) => {
     }
 
     // res.send({ status: "OK", data: data });
-    res.send(data);
+    res.send([data]);
   } catch (error) {
     res
       .status(error?.status || 500)
