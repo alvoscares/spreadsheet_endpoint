@@ -49,9 +49,9 @@ const getPrueba = async (req, res) => {
     
     try {
         
-        let data = PruebaDB.data;
+        let data = PruebaDB;
 
-        res.send({ status: "OK", data: data });
+        res.send(data);
     } catch (error) {
         res
             .status(error?.status || 500)

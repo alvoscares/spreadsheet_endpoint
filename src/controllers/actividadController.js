@@ -22,7 +22,7 @@ const getActividad = async (req, res) => {
         data = [...data, ["", actividad.tag]];
         
         registros.filter(row => {
-            if (actividadPath !== "emae"){
+            if (actividadPath !== "emae.json"){
                 return row["Título"] == actividad.titulo && row["Subtítulo"] == actividad.subTitulo;
             } else {
                 return row["Título"] == actividad.titulo;
@@ -33,7 +33,7 @@ const getActividad = async (req, res) => {
         })
 
 
-        res.send({ status: "OK", data: data });
+        res.send([data]);
     } catch (error) {
         res
             .status(error?.status || 500)

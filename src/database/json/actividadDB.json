@@ -6,18 +6,18 @@
                 "titulo": "Producto Bruto Interno (PBI)",
                 "subTitulo": "Variación interanual en porcentaje (%)",
                 "tag": "PBI a precios constantes",
-                "path": "pbi-porcentaje"
+                "path": "pbi-porcentaje.json"
             },
             {
                 "titulo": "Producto Bruto Interno (PBI)",
                 "subTitulo": "En millones de pesos",
-                "tag": "PBI a precios constantes",
-                "path": "pbi-niveles"
+                "tag": "En niveles (Base 100=2004)",
+                "path": "pbi-niveles.json"
             },
             {
                 "titulo": "Estimador Mensual de Actividad Económica (EMAE)",
                 "tag": "EMAE desestacionalizado",
-                "path": "emae"
+                "path": "emae.json"
             }
         ]
     }
