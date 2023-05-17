@@ -23,13 +23,13 @@
             {
                 "titulo": "Empleo por categorías - EPH (Nación)",
                 "tag": "IPC - Nación",
-                "path": "ipc-nacion.json",
+                "path": "empleo-nacion.json",
                 "sheetIndex": 1
             },
             {
                 "titulo": "Empleo por categorías - EPH (Córdoba)",
                 "tag": "IPC - Nación",
-                "path": "ipc-nacion",
+                "path": "empleo-cba.json",
                 "sheetIndex": 1
             },
             {

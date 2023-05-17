@@ -1,7 +1,7 @@
 const googleSheet = require('../utils/spreeadSheet');
 const mercadoService = require("../services/mercadoService")
 
-const getMercado = async (req, res) => {
+const getMercadoTasa = async (req, res) => {
     const {
         params: { mercadoPath },
     } = req;
@@ -24,22 +24,7 @@ const getMercado = async (req, res) => {
         let fechaConurbano = [["Conurbano", mercado.titulo]];
         let fechaRosario = [["Gran Rosario", mercado.titulo]];
         let fechaMendoza = [["Gran Mendoza", mercado.titulo]];
-        let fechaTucuman = [["Gran Tucumán - T. Viejo", mercado.titulo]];
-
-        // data = [...data, ["", mercado.tag]];
-
-        // registros.filter(row => {
-
-        //     return row["Título"] == mercado.titulo;
-
-        // }).map(row => {
-        //     // data = [...data, ["Nación", mercado.tag]];
-        //     data = [...data, [row.Fecha, row["Nación"]]];
-        //     return data
-        // })
-
-
-        // res.send([data]);
+        let fechaTucuman = [["Gran Tucumán - T. Viejo", mercado.titulo]];        
 
         const valores = registros.filter(row => {
 
@@ -61,7 +46,41 @@ const getMercado = async (req, res) => {
         }
 
         data = [fechaNacion, fechaCordoba, fechaCABA, fechaConurbano, fechaRosario, fechaMendoza, fechaTucuman];
-        // console.log(data);
+
+        res.send(data);
+
+    } catch (error) {
+        res
+            .status(error?.status || 500)
+            .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
+};
+
+const getMercadoEph = async (req, res) => {
+    const {
+        params: { mercadoPath },
+    } = req;
+
+    if (!mercadoPath) {
+        res.status(400).send({
+            status: "FAILED",
+            data: { error: "Parameter ':mercadoPath' can not be empty" },
+        });
+        return;
+    }
+
+    try {
+        const mercado = mercadoService.getMercado(mercadoPath)
+        const registros = await googleSheet.accederGoogleSheet(mercado.mercadoIdSheet, mercado.sheetIndex);
+        let data = [["Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]];
+
+        registros.filter(row => {
+            return row["Título"] == mercado.titulo
+          }).map(row => {
+            data = [...data, [row.Fecha, row["Asalariados Registrados"], row["Asalariados No Registrados"], row["No Asalariados"]]];
+            return data
+          })
+        
         res.send(data);
 
     } catch (error) {
@@ -72,5 +91,6 @@ const getMercado = async (req, res) => {
 };
 
 module.exports = {
-    getMercado
+    getMercadoTasa,
+    getMercadoEph
 }

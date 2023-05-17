@@ -3,7 +3,8 @@ const router = Router();
 const mercadoController = require('../controllers/mercadoController');
 
 
-router.get('/:mercadoPath', mercadoController.getMercado);
+router.get('/tasa/:mercadoPath', mercadoController.getMercadoTasa);
+router.get('/eph/:mercadoPath', mercadoController.getMercadoEph);
 
 // router.get('/empleo-registrado', setRequestInfo('Empleo registradoo (Nación)',   'Empleo Registrado (SIPA)'), obtenerDatos);
 
