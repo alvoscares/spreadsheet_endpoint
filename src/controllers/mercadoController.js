@@ -81,7 +81,7 @@ const getMercadoEph = async (req, res) => {
             return data
           })
         
-        res.send(data);
+        res.send([data]);
 
     } catch (error) {
         res
