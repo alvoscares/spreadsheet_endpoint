@@ -4,6 +4,6 @@ const cuentasController = require('../controllers/cuentasController');
 
 router.get('/:cuentasPath', cuentasController.getCuentas);
 //ruta de prueba. Borrar
-router.get('/prueba/grafico.json', cuentasController.getPrueba);
+router.get('/prueba/graficos.json', cuentasController.getPrueba);
 
 module.exports = router;
