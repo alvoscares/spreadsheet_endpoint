@@ -24,7 +24,7 @@ const getMercadoTasa = async (req, res) => {
         let fechaConurbano = [["Conurbano", mercado.titulo]];
         let fechaRosario = [["Gran Rosario", mercado.titulo]];
         let fechaMendoza = [["Gran Mendoza", mercado.titulo]];
-        let fechaTucuman = [["Gran Tucumán - T. Viejo", mercado.titulo]];        
+        let fechaTucuman = [["Gran Tucumán - T. Viejo", mercado.titulo]];
 
         const valores = registros.filter(row => {
 
@@ -74,19 +74,36 @@ const getMercadoEph = async (req, res) => {
         const registros = await googleSheet.accederGoogleSheet(mercado.mercadoIdSheet, mercado.sheetIndex);
         let data = [];
 
-        registros.filter(row => {
-            return row["Título"] == mercado.titulo
-          }).map(row => {
-            if ( mercadoPath !== "epc.json") {
-                data = [["ALVO","Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]]
+        if (mercadoPath !== "epc.json") {
+            data = [...data,["ALVO", "Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]]
+            registros.filter(row => {
+                return row["Título"] == mercado.titulo
+            }).map(row => {
                 data = [...data, [row.Fecha, row["Asalariados Registrados"], row["Asalariados No Registrados"], row["No Asalariados"]]];
-            } else {
-                data = [["ALVO","Asalariados privados", "Asalariados públicos", "Trabajadores en casas particulares", "Autónomos", "Monotributistas"]]
+            })
+
+        } else {
+            data = [...data,["ALVO", "Asalariados privados", "Asalariados públicos", "Trabajadores en casas particulares", "Autónomos", "Monotributistas"]]
+            registros.filter(row => {
+                return row["Título"] == mercado.titulo
+            }).map(row => {
                 data = [...data, [row.Fecha, row["Asalariados privados"], row["Asalariados públicos"], row["Trabajadores en casas particulares"], row["Autónomos"], row["Monotributistas"]]];
-            }
-            return data
-          })
-        
+            })
+        }
+
+        // registros.filter(row => {
+        //     return row["Título"] == mercado.titulo
+        //   }).map(row => {
+        //     if ( mercadoPath !== "epc.json") {
+        //         data = [["ALVO","Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]]
+        //         data = [...data, [row.Fecha, row["Asalariados Registrados"], row["Asalariados No Registrados"], row["No Asalariados"]]];
+        //     } else {
+        //         data = [["ALVO","Asalariados privados", "Asalariados públicos", "Trabajadores en casas particulares", "Autónomos", "Monotributistas"]]
+        //         data = [...data, [row.Fecha, row["Asalariados privados"], row["Asalariados públicos"], row["Trabajadores en casas particulares"], row["Autónomos"], row["Monotributistas"]]];
+        //     }
+        //     return data
+        //   })
+
         res.send([data]);
 
     } catch (error) {
