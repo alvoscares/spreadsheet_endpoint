@@ -2,6 +2,8 @@ const googleSheet = require('../utils/spreeadSheet');
 const cuentasService = require("../services/cuentasService")
 //DB de prueba. Borrar
 const PruebaDB = require('../database/json/PruebasGraficos.json')
+const PruebaAlvoDB = require('../database/json/PruebasGraficosAlvo.json')
+
 
 const getCuentas = async (req, res) => {
     const {
@@ -58,10 +60,25 @@ const getPrueba = async (req, res) => {
             .send({ status: "FAILED", data: { error: error?.message || error } });
     }
 };
+//Prueba de graficos Alvo
+const getPruebaAlvo = async (req, res) => {
+    
+    try {
+        
+        let data = PruebaAlvoDB;
+
+        res.send(data);
+    } catch (error) {
+        res
+            .status(error?.status || 500)
+            .send({ status: "FAILED", data: { error: error?.message || error } });
+    }
+};
 
 //todo: Hacer el get para las cuentas Déficit fiscal y cuasifiscal (Nación)
 
 module.exports = {
     getCuentas,
-    getPrueba
+    getPrueba,
+    getPruebaAlvo
 }
