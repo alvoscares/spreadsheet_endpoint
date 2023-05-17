@@ -72,12 +72,18 @@ const getMercadoEph = async (req, res) => {
     try {
         const mercado = mercadoService.getMercado(mercadoPath)
         const registros = await googleSheet.accederGoogleSheet(mercado.mercadoIdSheet, mercado.sheetIndex);
-        let data = [["ALVO","Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]];
+        let data = [];
 
         registros.filter(row => {
             return row["Título"] == mercado.titulo
           }).map(row => {
-            data = [...data, [row.Fecha, row["Asalariados Registrados"], row["Asalariados No Registrados"], row["No Asalariados"]]];
+            if ( mercadoPath !== "epc.json") {
+                data = [["ALVO","Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]]
+                data = [...data, [row.Fecha, row["Asalariados Registrados"], row["Asalariados No Registrados"], row["No Asalariados"]]];
+            } else {
+                data = [["ALVO","Asalariados privados", "Asalariados públicos", "Trabajadores en casas particulares", "Autónomos", "Monotributistas"]]
+                data = [...data, [row.Fecha, row["Asalariados privados"], row["Asalariados públicos"], row["Trabajadores en casas particulares"], row["Autónomos"], row["Monotributistas"]]];
+            }
             return data
           })
         

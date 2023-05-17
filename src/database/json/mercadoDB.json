@@ -35,7 +35,7 @@
             {
                 "titulo": "Empleo registrado por categorías - Min. Trabajo (Nación)",
                 "tag": "IPC - Córdoba",
-                "path": "ipc-cordoba",
+                "path": "epc.json",
                 "sheetIndex": 2
             }
         ]
