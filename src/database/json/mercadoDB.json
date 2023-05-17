@@ -4,26 +4,26 @@
         "indicadores": [
             {
                 "titulo": "Tasa de desocupación",
-                "tag": "IPC - Nación",
-                "path": "ipc-nacion",
+                "tag": "",
+                "path": "desocupacion.json",
                 "sheetIndex": 0
             },
             {
                 "titulo": "Tasa de inactividad",
                 "tag": "IPC - Nación",
-                "path": "ipc-nacion",
+                "path": "inactividad.json",
                 "sheetIndex": 0
             },
             {
                 "titulo": "Presión sobre el mercado laboral",
                 "tag": "IPC - Nación",
-                "path": "ipc-nacion",
+                "path": "presion.json",
                 "sheetIndex": 0
             },
             {
                 "titulo": "Empleo por categorías - EPH (Nación)",
                 "tag": "IPC - Nación",
-                "path": "ipc-nacion",
+                "path": "ipc-nacion.json",
                 "sheetIndex": 1
             },
             {
