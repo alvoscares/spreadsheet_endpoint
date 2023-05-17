@@ -72,7 +72,7 @@ const getMercadoEph = async (req, res) => {
     try {
         const mercado = mercadoService.getMercado(mercadoPath)
         const registros = await googleSheet.accederGoogleSheet(mercado.mercadoIdSheet, mercado.sheetIndex);
-        let data = [["Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]];
+        let data = [["ALVO","Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"]];
 
         registros.filter(row => {
             return row["Título"] == mercado.titulo
