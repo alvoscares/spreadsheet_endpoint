@@ -5,12 +5,12 @@
             {
                 "titulo": "Inflación Nación (IPC)",
                 "tag": "IPC - Nación",
-                "path": "ipc-nacion"
+                "path": "ipc-nacion.json"
             },
             {
                 "titulo": "Inflación Córdoba (IPC)",
                 "tag": "IPC - Córdoba",
-                "path": "ipc-cordoba"
+                "path": "ipc-cordoba.json"
             }
         ]
     }
