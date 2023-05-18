@@ -5,13 +5,14 @@
             {
                 "titulo": "Tasa de pobreza",
                 "tag": "",
-                "path": "",
+                "path": "tasa.json",
                 "sheetIndex": 0
             },
             {
                 "titulo": "Canasta Básica Total",
                 "tag": "",
-                "path": "",
+                "multiIndicadores":["", "Canasta", "Inflación"],
+                "path": "canasta.json",
                 "sheetIndex": 1
             }
         ]

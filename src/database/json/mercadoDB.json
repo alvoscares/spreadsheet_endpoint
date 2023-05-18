@@ -23,18 +23,21 @@
             {
                 "titulo": "Empleo por categorías - EPH (Nación)",
                 "tag": "IPC - Nación",
+                "multiIndicadores": ["", "Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"],
                 "path": "empleo-nacion.json",
                 "sheetIndex": 1
             },
             {
                 "titulo": "Empleo por categorías - EPH (Córdoba)",
                 "tag": "IPC - Nación",
+                "multiIndicadores":["", "Asalariados Registrados", "Asalariados No Registrados", "No Asalariados"],
                 "path": "empleo-cba.json",
                 "sheetIndex": 1
             },
             {
                 "titulo": "Empleo registrado por categorías - Min. Trabajo (Nación)",
                 "tag": "IPC - Córdoba",
+                "multiIndicadores":["", "Asalariados privados", "Asalariados públicos", "Trabajadores en casas particulares", "Autónomos", "Monotributistas"],
                 "path": "epc.json",
                 "sheetIndex": 2
             }
