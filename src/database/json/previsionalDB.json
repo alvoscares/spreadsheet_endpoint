@@ -5,12 +5,14 @@
             {
                 "titulo": "Haber mínimo (Nación)",
                 "tag": "",
-                "path": ""
+                "multiIndicadores":["Fecha", "Nominal", "A precios actuales"],
+                "path": "nacion.json"
             },
             {
                 "titulo": "Haber medio (Córdoba",
                 "tag": "",
-                "path": ""
+                "multiIndicadores":["Fecha", "Nominal", "A precios actuales"],
+                "path": "cordoba.json"
             }
             
         ]

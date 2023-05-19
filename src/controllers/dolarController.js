@@ -18,34 +18,40 @@ const getDolar = async (req, res) => {
     const dolar = dolarService.getDolar(dolarPath)
     const registros = await googleSheet.accederGoogleSheet(dolar.dolarIdSheet);
     let data = [];
-    let dataChild = [];
-    //todo : Rearmar el metedo de comparacion mas eficiente.
-    if (dolar.path === "comparacion") {
-      data = [...data, ["Dólar", "Ahorro", "Blue", "MEP", "CCL", "Oficial"]];
-      let agrupadoPorFecha = registros.filter(row =>
-        dolar.multiIndicadores.includes(row["Título"])
-      ).reduce((collector, item) => {
-        const { index, result } = collector;
+    if (dolar.path === "comparacion.json") {
 
-        const groupKey = item.Fecha;
-        let groupedList = index[groupKey];
+      const datos = {};
 
-        if (!groupedList) {
-          groupedList = index[groupKey] = [groupKey];
+      registros.forEach(registro => {
+        const titulo = registro["Título"];
+        const fecha = registro.Fecha;
+        const valor = registro["Dólar"];
 
-          result.push(groupedList);
+        // si la fecha ya tiene un valor para este dolar, actualizamos el valor
+        if (datos[fecha] && datos[fecha][titulo]) {
+          datos[fecha][titulo] = valor;
+        } else { // si no, agregamos un nuevo objeto para la fecha y el dolar correspondiente
+          if (!datos[fecha]) {
+            datos[fecha] = {};
+          }
+          datos[fecha][titulo] = valor;
         }
-        groupedList.push(item["Dólar"]);
+      });
 
-        return collector;
-      }, {
+      // construimos el nuevo array a partir de los datos almacenados en el objeto
+      const nuevoArray = [["", "Dólar ahorro", "Dólar blue", "Dólar MEP", "Dólar CCL", "Dólar oficial"]];
+      Object.keys(datos).forEach(fecha => {
+        const valores = [fecha];
+        const dolarAhorro = datos[fecha]["Dólar ahorro"] || "";
+        const dolarBlue = datos[fecha]["Dólar blue"] || "";
+        const dolarMep = datos[fecha]["Dólar MEP"] || "";
+        const dolarCcl = datos[fecha]["Dólar CCL"] || "";
+        const dolarOficial = datos[fecha]["Dólar oficial"] || "";
+        valores.push(dolarAhorro, dolarBlue, dolarMep, dolarCcl, dolarOficial);
+        nuevoArray.push(valores);
+      });
 
-        index: {},
-        result: [],
-
-      }).result;
-
-      data = [...data, agrupadoPorFecha];
+      data = nuevoArray;
 
     } else {
       data = [...data, ["", dolar.tag]];
@@ -57,7 +63,6 @@ const getDolar = async (req, res) => {
       })
     }
 
-    // res.send({ status: "OK", data: data });
     res.send([data]);
   } catch (error) {
     res

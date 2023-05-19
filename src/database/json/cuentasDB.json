@@ -5,19 +5,22 @@
             {
                 "titulo": "Ingresos y gastos primarios (Nación)",
                 "tag": "Ingresos y gastos primarios (Nación)",
-                "path": "ingresos-gastos",
+                "multiIndicadores":["Fecha", "Gastos", "Ingresos"],
+                "path": "ingresos-gastos.json",
                 "sheetIndex": 0
             },
             {
                 "titulo": "Déficit fiscal y cuasifiscal (Nación)",
                 "tag": "Déficit fiscal y cuasifiscal (Nación)",
-                "path": "deficit",
+                "multiIndicadores":["Fecha", "Déficit fiscal", "Déficit cuasifiscal"],
+                "path": "deficit.json",
                 "sheetIndex": 1
             },
             {
                 "titulo": "Tasas de interés (Nación)",
                 "tag": "Tasa de interés",
-                "path": "tasas",
+                "multiIndicadores":["Fecha", "Tesoro", "Banco Central"],
+                "path": "tasas.json",
                 "sheetIndex": 2
             }
         ]

@@ -1,9 +1,7 @@
 const { Router } = require('express');
 const router = Router();
-const { obtenerDatos } = require('../controllers/obtenerDatos');
-const { setRequestInfo } = require('../utils/requestInfo');
+const previsionalController = require('../controllers/previsionalController');
 
-
-router.get('/previsional-haber-medio.json', setRequestInfo('Haber medio (Córdoba)',  'Haber medio - Córdoba'), obtenerDatos);
+router.get('/:previsionalPath', previsionalController.getPrevisional);
 
 module.exports = router;

@@ -5,19 +5,22 @@
             {
                 "titulo": "Salarios (Índice de Salarios)",
                 "tag": "",
-                "path": "",
+                "multiIndicadores":["Fecha", "Salarios", "Poder adquisitivo", "Inflación"],
+                "path": "indice.json",
                 "sheetIndex": 0
             },
             {
                 "titulo": "Salarios por categorías (Índice de Salarios)",
                 "tag": "",
-                "path": "",
+                "multiIndicadores":["Fecha", "Registrados", "No registrados", "Inflación"],
+                "path": "categorias.json",
                 "sheetIndex": 1
             },
             {
                 "titulo": "Salarios (RIPTE)",
                 "tag": "",
-                "path": "",
+                "multiIndicadores":["Fecha", "Nominal", "A precios actuales"],
+                "path": "ripte.json",
                 "sheetIndex": 2
             }
         ]
